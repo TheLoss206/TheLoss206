@@ -1,0 +1,328 @@
+body {
+    margin: 0;
+    background-color: #000;
+    color: #eee;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+
+
+nav {
+    background-color: #111;
+    padding: 15px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: bold;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+.hero {
+    padding: 40px 20px;
+}
+
+.logo {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+.hero {
+    padding: 20px 0;
+}
+
+.media-links img {
+    all: unset;
+}
+
+
+
+.media-links h2 {
+    font-size: 1.4rem;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+    color: #aaa;
+}
+
+
+.links-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.media-button {
+    background-color: #222;
+    color: white;
+    text-decoration: none;
+    padding: 12px 25px;
+    font-weight: bold;
+    border: 2px solid #555;
+    border-radius: 5px;
+    transition: all 0.2s ease-in-out;
+}
+
+.media-button:hover {
+    background-color: #555;
+    border-color: #fff;
+    color: #fff;
+}
+.links-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 40px;
+    align-items: center;
+}
+
+.media-button img {
+    width: 42px;
+    height: 42px;
+    opacity: 0.75;
+    transition: all 0.2s ease-in-out;
+}
+
+.media-button:hover img {
+    opacity: 1;
+    transform: scale(1.15);
+}
+
+main {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.site-footer {
+    border-top: 1px solid #222;
+    margin-top: 60px;
+    padding: 30px 20px;
+    background-color: #000;
+}
+
+.footer-content {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.site-footer p {
+    margin: 6px 0;
+    font-size: 0.9rem;
+    color: #777;
+}
+
+.footer-band {
+    font-weight: bold;
+    letter-spacing: 2px;
+    color: #aaa;
+    text-transform: uppercase;
+}
+
+.footer-location {
+    font-size: 0.9rem;
+    color: #777;
+}
+
+
+.footer-contact a {
+    color: #aaa;
+    text-decoration: none;
+}
+
+.footer-contact a:hover {
+    text-decoration: underline;
+}
+
+.footer-copy {
+    margin-top: 15px;
+    font-size: 0.8rem;
+    color: #555;
+}
+
+.main-nav {
+    padding: 20px 0;
+    text-align: center;
+}
+
+.main-nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.main-nav li {
+    display: inline-block;
+    margin: 0 15px;
+}
+
+.main-nav a {
+    text-decoration: none;
+    color: #aaa;
+    font-size: 0.9rem;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+.main-nav a:hover {
+    color: #fff;
+}
+
+/* ---------- About Page Member Grid ---------- */
+.member-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 30px;
+    justify-items: center;
+    margin: 40px 0;
+}
+
+.member-grid .member img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 10px;
+    border: 2px solid #333;
+    transition: transform 0.2s ease;
+}
+
+.member-grid .member img:hover {
+    transform: scale(1.05);
+}
+
+.member-grid .member p {
+    margin-top: 10px;
+    font-weight: bold;
+    text-align: center;
+}
+
+/* ---------- Merch Page Grid ---------- */
+.merch-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 30px;
+    justify-items: center;
+    margin: 40px 0;
+}
+
+.merch-grid .merch-item img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 10px;
+    border: 2px solid #333;
+    transition: transform 0.2s ease, opacity 0.2s ease;
+    opacity: 0.8;
+}
+
+.merch-grid .merch-item img:hover {
+    transform: scale(1.05);
+    opacity: 1;
+}
+
+.merch-grid .merch-item p {
+    margin-top: 10px;
+    font-weight: bold;
+    text-align: center;
+    font-size: 0.95rem;
+}
+
+/* ---------- Merch Page Enhancements ---------- */
+
+.merch-intro {
+    margin-bottom: 30px;
+    font-style: italic;
+}
+
+.merch-item.sold-out img {
+    filter: grayscale(100%);
+}
+
+.merch-name {
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.merch-status {
+    font-size: 0.9rem;
+    opacity: 0.7;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.merch-sizes {
+    font-size: 0.85rem;
+    opacity: 0.8;
+    margin-top: 5px;
+}
+
+.page-header {
+    text-align: center;
+    padding: 40px 20px 20px;
+}
+
+.archive-note {
+    max-width: 600px;
+    margin: 0 auto;
+    font-size: 0.9rem;
+    opacity: 0.8;
+}
+
+.merch-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 30px;
+    padding: 0 30px 40px;
+}
+
+.merch-item {
+    text-align: center;
+}
+
+.merch-item img {
+    width: 100%;
+    max-width: 250px;
+    filter: grayscale(100%);
+}
+
+.merch-name {
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+.merch-status {
+    margin-top: 5px;
+    font-size: 0.85rem;
+    opacity: 0.8;
+}
+
+.merch-sizes {
+    font-size: 0.85rem;
+    opacity: 0.8;
+    margin-top: 5px;
+}
+
+
+/* ---------- General Section Styling ---------- */
+.about-section, .merch-section {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 20px;
+    text-align: center;
+}
+
+.about-section h1, .merch-section h1 {
+    margin-bottom: 20px;
+}
+
+.about-section p, .merch-section p {
+    line-height: 1.5;
+}
+
